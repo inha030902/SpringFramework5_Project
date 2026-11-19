@@ -3,12 +3,13 @@ package myspring.di.xml;
 //Assertions 클래스의 모든 static 메서드를 임포트 한다
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class HelloBeanJunitTest {
-	BeanFactroy factory;
+	BeanFactory factory;
 	
 	
 	@BeforeEach
