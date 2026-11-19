@@ -1,5 +1,6 @@
 package myspring.di.xml;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.support.GenericXmlApplicationContext;
@@ -22,7 +23,8 @@ public class HelloBeanJunitTest {
 		
 		//2개의 Hello Bean의 주소비교
 		System.out.println(helloById == helloByType);
-		
+		//assertSame() 메서드 사용
+		Assertions.assertSame(helloById, helloByType);
 		
 	}
 }
