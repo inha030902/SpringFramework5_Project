@@ -25,10 +25,11 @@ public class HelloBeanJunitTest {
 		
 		//2개의 Hello Bean의 주소비교
 		System.out.println(helloById == helloByType);
-		//assertSame() 메서드 사용
+		//assertSame() 메서드 사용해서 주소 비교
 		assertSame(helloById, helloByType);
 		
-		
+		//setName() Injection을 검증하기 - 값 비교
+		assertEquals("Hello  스프링", helloByType.sayHello());
 		
 	}
 }
