@@ -23,5 +23,6 @@ public class HelloBeanJunitTest {
 		//2개의 Hello Bean의 주소비교
 		System.out.println(helloById == helloByType);
 		
+		
 	}
 }
