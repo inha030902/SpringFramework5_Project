@@ -16,6 +16,6 @@
 		<!-- setName("스프링") -->
 		<property name = "name" value ="스프링" />
 		<!-- setPrinter(new StringPrinter()) -->
-		<property name = "printer" ref = "strPrinter" />
+		<property name = "printer" ref = "strPrinter" scope = "prototype"/>
 	</bean>
 </beans>
