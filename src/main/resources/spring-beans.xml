@@ -13,6 +13,6 @@
 	
 	<!--Hello 클래스를 SpringBean으로 설정 Setter Injection 방식-->
 	<bean id = "hello" class = "myspring.di.xml.Hello">
-		
+		<property name = "name" value ="스프링" />
 	</bean>
 </beans>
