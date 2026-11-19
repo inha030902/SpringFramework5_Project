@@ -31,5 +31,6 @@ public class HelloBeanJunitTest {
 		//setName() Injection을 검증하기 - 값 비교
 		assertEquals("Hello 스프링", helloByType.sayHello());
 		
+		//setPrinter() Injection을 검증하기
 	}
 }
