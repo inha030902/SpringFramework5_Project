@@ -32,5 +32,7 @@ public class HelloBeanJunitTest {
 		assertEquals("Hello 스프링", helloByType.sayHello());
 		
 		//setPrinter() Injection을 검증하기
+		helloByType.print();
+		
 	}
 }
