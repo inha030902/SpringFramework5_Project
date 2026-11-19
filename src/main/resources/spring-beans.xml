@@ -15,5 +15,6 @@
 	<bean id = "hello" class = "myspring.di.xml.Hello">
 		<!-- setName("스프링") -->
 		<property name = "name" value ="스프링" />
+		<property name = "printer" ref = "strPrinter" />
 	</bean>
 </beans>
