@@ -34,5 +34,9 @@ public class HelloBeanJunitTest {
 		//setPrinter() Injection을 검증하기
 		helloByType.print();
 		
+		//3. StringPrinter Bean을 요청하기
+		Printer printer = factory.getBean("strPrinter", Printer.class);
+		
+		asserEquals("Hello 스프링", printer.toString());
 	}
 }
