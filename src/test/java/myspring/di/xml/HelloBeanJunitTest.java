@@ -28,5 +28,7 @@ public class HelloBeanJunitTest {
 		//assertSame() 메서드 사용
 		assertSame(helloById, helloByType);
 		
+		
+		
 	}
 }
