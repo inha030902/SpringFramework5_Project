@@ -37,6 +37,6 @@ public class HelloBeanJunitTest {
 		//3. StringPrinter Bean을 요청하기
 		Printer printer = factory.getBean("strPrinter", Printer.class);
 		
-		asserEquals("Hello 스프링", printer.toString());
+		assertEquals("Hello 스프링", printer.toString());
 	}
 }
