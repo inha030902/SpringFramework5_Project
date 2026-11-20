@@ -24,7 +24,7 @@ public class HelloBeanCons {
 	
 	@Autowired
 	public HelloBeanCons(
-			@Value("어노테이션생성자") String name, 
+			@Value("${app.constructor.name}") String name, 
 			@Qualifier("consolePrinter") PrinterBean printer) {
 		System.out.println(this.getClass().getName() + "인자가 있는 생성자 호출됨!");
 		this.name = name;
