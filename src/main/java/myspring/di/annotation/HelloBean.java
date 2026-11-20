@@ -2,11 +2,14 @@ package myspring.di.annotation;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 //@Component <=> <bean></bean>
 @Component
 public class HelloBean {
+	//@Value <=> <property name = "name" value = "어노테이션 />
+	@Value("어노테이션")
 	String name;
 	PrinterBean printer;
 	List<String> names;
