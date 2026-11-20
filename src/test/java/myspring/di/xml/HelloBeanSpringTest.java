@@ -16,6 +16,6 @@ public class HelloBeanSpringTest {
 	
 	@Test
 	void helloBean() {
-		assertEquals("", hello.sayHello());
+		assertEquals("Hello 스프링", hello.sayHello());
 	}
 }
