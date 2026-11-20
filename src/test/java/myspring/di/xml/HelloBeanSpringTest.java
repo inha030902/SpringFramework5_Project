@@ -43,5 +43,8 @@ public class HelloBeanSpringTest {
 		for(String value:hello2.getNames()) {
 			System.out.println(value);
 		}
+		
+		assertEquals(4, hello2.getNames().size());
+		assertEquals("스프링프레임워크", hello2.getNames().get(0));
 	}
 }
