@@ -15,7 +15,8 @@ public class HelloBeanCons {
 	PrinterBean printer;
 	
 	List<String> names;
-
+	
+	@Autowired
 	public HelloBeanCons(String name, PrinterBean printer) {
 		System.out.println(this.getClass().getName() + "인자가 있는 생성자 호출됨!");
 		this.name = name;
