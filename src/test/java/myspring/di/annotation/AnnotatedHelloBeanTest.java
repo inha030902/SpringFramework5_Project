@@ -38,6 +38,7 @@ public class AnnotatedHelloBeanTest {
 		helloCons.print();
 		
 		for (String name : helloCons.getNames()) {
+			System.out.println(name);
 			
 		}
 	}

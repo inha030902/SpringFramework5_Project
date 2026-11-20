@@ -16,17 +16,16 @@ import org.springframework.stereotype.Component;
 //@Component <=> <bean></bean>
 @Component
 public class HelloBeanCons {
-	
-	
+
 	String name;
 
 	PrinterBean printer;
 	
-	@Value("#{'${app.namelist}'.split(',')}") // Java,SpringFW,SpringBoot
 	List<String> names;
 	
 	@Autowired
 	public HelloBeanCons(
+			//어노테이션생성자
 			@Value("${app.constructor.name}") String name, 
 			@Qualifier("consolePrinter") PrinterBean printer) {
 		System.out.println(this.getClass().getName() + "인자가 있는 생성자 호출됨!");
@@ -37,7 +36,8 @@ public class HelloBeanCons {
 	public List<String> getNames() {
 		return this.names;
 	}
-
+	
+	@Value("#{'${app.namelist}'.split(',')}") // Java,SpringFW,SpringBoot
 	public void setNames(List<String> list) {
 		this.names = list;
 	}
