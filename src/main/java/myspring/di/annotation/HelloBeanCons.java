@@ -10,22 +10,18 @@ import org.springframework.stereotype.Component;
 //@Component <=> <bean></bean>
 @Component
 public class HelloBeanCons {
-	//@Value <=> <property name = "name" value = "어노테이션 />
-	@Value("어노테이션")
 	String name;
-	
-	//@Autowired <=> <property name = "printer" ref = "stringPrinter"/>
-	@Autowired
-	@Qualifier("stringPrinter")
+
 	PrinterBean printer;
+	
 	List<String> names;
 
-	public HelloBeanCons() {
-		System.out.println(this.getClass().getName() + " 기본생성자 호출됨!");
+	public HelloBeanCons(String name, PrinterBean printer) {
+		System.out.println(this.getClass().getName() + "인자가 있는 생성자 호출됨!");
+		this.name = name;
+		this.printer = printer;
 	}
 	
-	
-
 	public List<String> getNames() {
 		return this.names;
 	}
