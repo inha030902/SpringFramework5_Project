@@ -1,12 +1,12 @@
 package myspring.di.annotation;
 
 
-public class StringPrinter implements Printer {
+public class StringPrinterBean implements Printer {
 	
 	private StringBuffer buffer = new StringBuffer();
 	
 
-	public StringPrinter() {
+	public StringPrinterBean() {
 		System.out.println(this.getClass().getName() + " 기본생성자 호출됨!");
 	}
 

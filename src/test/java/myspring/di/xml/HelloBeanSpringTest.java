@@ -20,7 +20,7 @@ public class HelloBeanSpringTest {
 	
 	//@Autowired - Bean의 Class Type으로 의존하는 객체를 찾는 방식
 	@Autowired
-	@Qualifier("helloCons") // 단독으로 쓰지 않음. Autowired와 함께 쓰임
+	@Qualifier("helloCons") // 단독으로 쓰지 않음. @Autowired와 함께 쓰임
 	Hello hello2;
 	
 	//@Resource - Bean의 name(id) 값으로 의존하는 객체를 찾는 방식
