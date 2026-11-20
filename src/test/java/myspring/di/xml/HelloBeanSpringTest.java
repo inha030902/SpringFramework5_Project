@@ -35,5 +35,7 @@ public class HelloBeanSpringTest {
 		assertEquals("Hello 생성자", hello3.sayHello());
 		
 		hello2.print();
+		
+		
 	}
 }
