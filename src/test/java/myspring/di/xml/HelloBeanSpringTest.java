@@ -5,7 +5,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(locations = )
+@ContextConfiguration(locations = "classpath:spring-beans.xml")
 public class HelloBeanSpringTest {
 
 }
