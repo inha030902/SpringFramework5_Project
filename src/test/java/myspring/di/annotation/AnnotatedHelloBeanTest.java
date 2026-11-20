@@ -17,5 +17,6 @@ public class AnnotatedHelloBeanTest {
 	@Test
 	void hello() {
 		assertEquals("Hello 어노테이션", hello.sayHello());
+		hello.print();
 	}
 }
