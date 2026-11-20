@@ -16,10 +16,13 @@ import org.springframework.stereotype.Component;
 //@Component <=> <bean></bean>
 @Component
 public class HelloBeanCons {
+	
+	
 	String name;
 
 	PrinterBean printer;
 	
+	@Value("#{'${app.namelist}'.split(',')}") // Java,SpringFW,SpringBoot
 	List<String> names;
 	
 	@Autowired

@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import javax.annotation.Resource;
 
+import org.apache.jasper.tagplugins.jstl.core.ForEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -36,6 +37,9 @@ public class AnnotatedHelloBeanTest {
 		assertEquals("Hello 어노테이션생성자", helloCons.sayHello());
 		helloCons.print();
 		
+		for (String name : helloCons.getNames()) {
+			
+		}
 	}
 	
 	@Test // @Disabled
