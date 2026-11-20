@@ -52,7 +52,7 @@ public class AnnotatedHelloBeanTest {
 	@Test
 	void hello_constructor() {
 		assertEquals("Hello 어노테이션생성자", helloCons.sayHello());
-		
+		helloCons.print();
 		
 	}
 	
