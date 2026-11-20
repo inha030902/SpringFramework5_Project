@@ -39,8 +39,10 @@ public class AnnotatedHelloBeanTest {
 		
 		for (String name : helloCons.getNames()) {
 			System.out.println(name);
-			
 		}
+		
+		assertEquals(3, helloCons.getNames().size());
+		assertEquals("SpringBoot", helloCons.getNames().get(2));
 	}
 	
 	@Test // @Disabled
