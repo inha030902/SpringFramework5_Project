@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+//@Component <=> <bean></bean>
 @Component
 public class HelloBean {
 	String name;
