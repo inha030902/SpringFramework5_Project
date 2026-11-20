@@ -17,10 +17,12 @@ public class HelloBeanSpringTest {
 	@Autowired
 	Hello hello;
 	
+	//@Autowired - Bean의 Class Type으로 의존하는 객체를 찾는 방식
 	@Autowired
 	@Qualifier("helloCons") // 단독으로 쓰지 않음. Autowired와 함께 쓰임
 	Hello hello2;
 	
+	//@Resource - Bean의 name(id) 값으로 의존하는 객체를 찾는 방식
 	@Resource(name = "hellCons")
 	Hello hello3;
 	
@@ -29,5 +31,7 @@ public class HelloBeanSpringTest {
 		assertEquals("Hello 스프링", hello.sayHello());
 		
 		assertEquals("Hello 생성자", hello2.sayHello());
+		
+		assertEquals("Hello 생성자", hello3.sayHello());
 	}
 }
