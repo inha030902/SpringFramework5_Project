@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloBean {
 	//@Value <=> <property name = "name" value = "어노테이션 />
-	@Value("어노테이션")
+	@Value("${app.setter.name}")
 	String name;
 	
 	//@Autowired <=> <property name = "printer" ref = "stringPrinter"/>
