@@ -23,6 +23,6 @@ public class HelloBeanSpringTest {
 	void helloBean() {
 		assertEquals("Hello 스프링", hello.sayHello());
 		
-		assertEqauls("Hello 생성자", hello2.sayHello());
+		assertEquals("Hello 생성자", hello2.sayHello());
 	}
 }
