@@ -2,16 +2,16 @@ package myspring.di.annotation;
 
 import java.util.List;
 
-public class Hello {
+public class HelloBean {
 	String name;
 	Printer printer;
 	List<String> names;
 
-	public Hello() {
+	public HelloBean() {
 		System.out.println(this.getClass().getName() + " 기본생성자 호출됨!");
 	}
 
-	public Hello(String name, Printer printer) {
+	public HelloBean(String name, Printer printer) {
 		System.out.println(this.getClass().getName() + " 오버로딩 생성자 호출됨!");
 		this.name = name;
 		this.printer = printer;
