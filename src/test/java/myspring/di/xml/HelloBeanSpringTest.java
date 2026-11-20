@@ -40,6 +40,8 @@ public class HelloBeanSpringTest {
 	
 	@Test
 	void list() {
-		
+		for(String value:hello2.getNames()) {
+			System.out.println(value);
+		}
 	}
 }
