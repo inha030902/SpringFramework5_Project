@@ -23,7 +23,7 @@ public class HelloBeanSpringTest {
 	Hello hello2;
 	
 	//@Resource - Bean의 name(id) 값으로 의존하는 객체를 찾는 방식
-	@Resource(name = "hellCons")
+	@Resource(name = "helloCons")
 	Hello hello3;
 	
 	@Test
