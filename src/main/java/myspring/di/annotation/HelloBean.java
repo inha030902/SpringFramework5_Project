@@ -2,6 +2,9 @@ package myspring.di.annotation;
 
 import java.util.List;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class HelloBean {
 	String name;
 	PrinterBean printer;
@@ -23,16 +26,6 @@ public class HelloBean {
 
 	public void setNames(List<String> list) {
 		this.names = list;
-	}
-
-	public void setName(String name) {
-		System.out.println("setName() 메서드 호출됨 " + name);
-		this.name = name;
-	}
-
-	public void setPrinter(PrinterBean printer) {
-		System.out.println("setPrinter() 메서드 호출됨 " + printer.getClass().getName());
-		this.printer = printer;
 	}
 
 	public String sayHello() {
