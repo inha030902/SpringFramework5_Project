@@ -23,12 +23,8 @@ public class HelloBean {
 	public HelloBean() {
 		System.out.println(this.getClass().getName() + " 기본생성자 호출됨!");
 	}
-
-	public HelloBean(String name, PrinterBean printer) {
-		System.out.println(this.getClass().getName() + " 오버로딩 생성자 호출됨!");
-		this.name = name;
-		this.printer = printer;
-	}
+	
+	
 
 	public List<String> getNames() {
 		return this.names;
