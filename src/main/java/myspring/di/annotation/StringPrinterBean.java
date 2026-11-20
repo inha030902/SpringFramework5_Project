@@ -1,7 +1,7 @@
 package myspring.di.annotation;
 
 
-public class StringPrinterBean implements Printer {
+public class StringPrinterBean implements PrinterBean {
 	
 	private StringBuffer buffer = new StringBuffer();
 	

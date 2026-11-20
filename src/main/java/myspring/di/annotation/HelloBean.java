@@ -4,14 +4,14 @@ import java.util.List;
 
 public class HelloBean {
 	String name;
-	Printer printer;
+	PrinterBean printer;
 	List<String> names;
 
 	public HelloBean() {
 		System.out.println(this.getClass().getName() + " 기본생성자 호출됨!");
 	}
 
-	public HelloBean(String name, Printer printer) {
+	public HelloBean(String name, PrinterBean printer) {
 		System.out.println(this.getClass().getName() + " 오버로딩 생성자 호출됨!");
 		this.name = name;
 		this.printer = printer;
@@ -30,7 +30,7 @@ public class HelloBean {
 		this.name = name;
 	}
 
-	public void setPrinter(Printer printer) {
+	public void setPrinter(PrinterBean printer) {
 		System.out.println("setPrinter() 메서드 호출됨 " + printer.getClass().getName());
 		this.printer = printer;
 	}

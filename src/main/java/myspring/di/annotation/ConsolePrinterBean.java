@@ -1,6 +1,6 @@
 package myspring.di.annotation;
 
-public class ConsolePrinterBean implements Printer {
+public class ConsolePrinterBean implements PrinterBean {
 	public ConsolePrinterBean() {
 		System.out.println(this.getClass().getName() + " 기본생성자 호출됨!");
 	}
