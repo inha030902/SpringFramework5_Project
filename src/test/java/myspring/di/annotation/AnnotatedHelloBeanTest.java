@@ -20,6 +20,7 @@ public class AnnotatedHelloBeanTest {
 	PrinterBean printer; //stringprinter로 받지 않는 이유는 상위 인터페이스가 printer가 있기 때문 대부분 상위 인터페이스로 받음
 	
 	
+	
 	@Test
 	void hello() {
 		assertEquals("Hello 어노테이션", hello.sayHello());
