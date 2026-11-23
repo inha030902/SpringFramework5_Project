@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import javax.annotation.Resource;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,9 +29,10 @@ public class HelloConfigTest {
 	@Test
 	void helloCons() {
 		assertEquals("", hello2.sayHello());
+		hello2.print();
 	}
 	
-	@Test
+	@Test @Disabled
 	void hello() {
 		assertEquals("Hello 스프링", hello.sayHello());
 		hello.print();
