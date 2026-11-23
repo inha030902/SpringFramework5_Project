@@ -23,7 +23,7 @@ public class HelloConfigTest {
 	@Autowired
 	Printer stringPrinter;
 	
-	@Resource(name = "")
+	@Resource(name = "helloCons")
 	Hello hello2;
 	
 	@Test
