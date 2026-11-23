@@ -28,7 +28,7 @@ public class HelloConfigTest {
 	
 	@Test
 	void helloCons() {
-		assertEquals("", hello2.sayHello());
+		assertEquals("Hello 생성자", hello2.sayHello());
 		hello2.print();
 	}
 	
