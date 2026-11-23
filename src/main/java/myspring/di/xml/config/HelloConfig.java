@@ -40,5 +40,10 @@ public class HelloConfig {
 		hello.setPrinter(stringPrinter());
 		return hello;
 	}
+	
+	@Bean
+	public Hello helloCons() {
+		String consName = env.getProperty("app.xmlcons.name");
+	}
 
 }
