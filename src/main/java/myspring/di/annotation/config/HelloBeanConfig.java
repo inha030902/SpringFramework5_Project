@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan(basePackages = {"myspring.di.annotation"})
+@Property
 public class HelloBeanConfig {
 
 }
