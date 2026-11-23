@@ -27,7 +27,7 @@ public class HelloConfigTest {
 	
 	@Test
 	void helloCons() {
-		assertEquals("", hellow.sayHello());
+		assertEquals("", hello2.sayHello());
 	}
 	
 	@Test
