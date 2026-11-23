@@ -1,3 +1,5 @@
+package mylab.user.di.annot;
+
 public class SecurityService {
     
     public boolean authenticate(String userId, String password) {
