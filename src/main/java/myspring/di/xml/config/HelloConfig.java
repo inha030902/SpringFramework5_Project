@@ -44,6 +44,8 @@ public class HelloConfig {
 	@Bean
 	public Hello helloCons() {
 		String consName = env.getProperty("app.xmlcons.name");
+		Hello hello = new Hello(consName, consolePrinter());
+		return hello;
 	}
 
 }
