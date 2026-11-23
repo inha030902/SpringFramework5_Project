@@ -26,6 +26,11 @@ public class HelloConfigTest {
 	Hello hello2;
 	
 	@Test
+	void helloCons() {
+		assertEquals("", hellow.sayHello());
+	}
+	
+	@Test
 	void hello() {
 		assertEquals("Hello 스프링", hello.sayHello());
 		hello.print();
