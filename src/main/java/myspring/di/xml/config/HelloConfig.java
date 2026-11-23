@@ -37,6 +37,8 @@ public class HelloConfig {
 		Hello hello = new Hello();
 		//hello.setName("스프링"); 아래와 동일하지만 바뀔 수 있는 값이니 아래와 같이 작성함.
 		hello.setName(env.getProperty("app.xmlsetter.name")); // 스프링
+		hello.setPrinter(stringPrinter());
 		return hello;
 	}
+
 }
