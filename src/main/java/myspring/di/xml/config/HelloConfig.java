@@ -28,7 +28,7 @@ public class HelloConfig {
 	
 	// <bean id = "hello" class = "myspring.di.xml.Hello" scope = "singleton">
 	@Bean
-	@Scope
+	@Scope(value = "singleton")
 	public Hello hello() {
 		Hello hello = new Hello();
 		return hello;
