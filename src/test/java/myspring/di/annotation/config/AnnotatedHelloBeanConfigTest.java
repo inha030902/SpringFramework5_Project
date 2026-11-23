@@ -2,6 +2,8 @@ package myspring.di.annotation.config;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import javax.annotation.Resource;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +12,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 import myspring.di.annotation.HelloBean;
+import myspring.di.annotation.PrinterBean;
 
 /*
  * AnnotationConfigContextLoader 로더 클래스는 
@@ -21,7 +24,10 @@ loader = AnnotationConfigContextLoader.class)
 public class AnnotatedHelloBeanConfigTest {
 	@Autowired
 	HelloBean hello;
-	
+
+	@Resource(name = "stringPrinter")
+	PrinterBean printerResource;
+
 	@Test
 	void hello () {
 		assertEquals("Hello 어노테이션", hello.sayHello());
