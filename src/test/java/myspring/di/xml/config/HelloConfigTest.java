@@ -2,6 +2,8 @@ package myspring.di.xml.config;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import javax.annotation.Resource;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +21,9 @@ public class HelloConfigTest {
 	
 	@Autowired
 	Printer stringPrinter;
+	
+	@Resource(name = "")
+	Hello hello2;
 	
 	@Test
 	void hello() {
