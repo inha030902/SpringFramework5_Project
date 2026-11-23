@@ -10,5 +10,5 @@ public class HelloConfig {
 	
 	//<bean id="strPrinter" class ="myspring.di.xml.StringPrinter"/>
 	@Bean
-
+	public
 }
