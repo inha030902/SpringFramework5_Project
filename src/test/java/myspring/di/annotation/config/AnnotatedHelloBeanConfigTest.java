@@ -26,6 +26,7 @@ public class AnnotatedHelloBeanConfigTest {
 	void hello () {
 		assertEquals("Hello 어노테이션", hello.sayHello());
 		hello.print();
+		asserEquals("Hello 어노테이션", printerResource.toString());
 	}
 	
 }
